@@ -1,0 +1,14 @@
+uuid: 24ceec0c-29ad-4032-9a92-9398422fe3eb
+langcode: da
+status: true
+dependencies: {  }
+name: top_image
+label: 'Top image'
+effects:
+  cd04affe-b05c-4cc7-8ee0-e64e991ed8d5:
+    uuid: cd04affe-b05c-4cc7-8ee0-e64e991ed8d5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1750
+      height: 440

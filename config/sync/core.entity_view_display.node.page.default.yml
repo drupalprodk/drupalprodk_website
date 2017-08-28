@@ -1,0 +1,44 @@
+uuid: 583ce5d8-84c2-4c8a-95eb-0d6f8da2b483
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_top_image
+    - field.field.node.page.field_top_image_text
+    - node.type.page
+  module:
+    - metatag
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_metatags:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_top_image: true
+  field_top_image_text: true
+  langcode: true

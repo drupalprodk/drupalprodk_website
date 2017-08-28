@@ -1,0 +1,14 @@
+uuid: f814758a-77c4-44aa-a000-d4189a111fda
+name: 'Drupal Leverandørforening'
+mail: foo@bar.local
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

@@ -1,0 +1,31 @@
+uuid: c7c1ade2-04d9-4aa2-87cb-1ddf1e01db48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e8d958f0-d46e-4500-9a8e-fd7a80515bbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalpro
+id: drupalpro_omos
+theme: drupalpro
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:e8d958f0-d46e-4500-9a8e-fd7a80515bbb'
+settings:
+  id: 'block_content:e8d958f0-d46e-4500-9a8e-fd7a80515bbb'
+  label: 'Om os'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

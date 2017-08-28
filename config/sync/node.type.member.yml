@@ -1,0 +1,17 @@
+uuid: 69493330-485b-4499-8b38-9026d50869c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Member
+type: member
+description: 'Use <em>member</em> for your managing of member companies on the members page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,38 @@
+uuid: ee7f5920-cb1e-4a41-8bb9-8b33116d4550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.member.body
+    - field.field.node.member.field_logo
+    - node.type.member
+  module:
+    - image
+    - text
+    - user
+id: node.member.default
+targetEntityType: node
+bundle: member
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

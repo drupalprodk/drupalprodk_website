@@ -1,0 +1,33 @@
+uuid: 0a312516-5658-42d2-b6b9-0154cb7f295c
+langcode: da
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: pages
+label: Pages
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  a274ef9f-bcd3-4e16-80be-ef734d9c1795:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a274ef9f-bcd3-4e16-80be-ef734d9c1795
+  fc6176ae-6e48-44d7-b71e-fb7676476dbb:
+    id: language
+    langcodes:
+      da: da
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: fc6176ae-6e48-44d7-b71e-fb7676476dbb
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Sprog

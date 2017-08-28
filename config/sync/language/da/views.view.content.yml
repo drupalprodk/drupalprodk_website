@@ -1,0 +1,50 @@
+label: Indhold
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Indholdstype
+        name:
+          label: Forfatter
+        status:
+          label: Status
+          settings:
+            format_custom_true: Udgivet
+        operations:
+          label: Handlinger
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Indholdstype
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Udgivet
+        langcode:
+          expose:
+            label: Sprog
+      title: Indhold
+    display_title: Master
+  page_1:
+    display_options:
+      menu:
+        title: Indhold
+      tab_options:
+        title: Indhold
+    display_title: Side

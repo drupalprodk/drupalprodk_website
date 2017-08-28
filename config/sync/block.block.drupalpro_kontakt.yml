@@ -1,0 +1,25 @@
+uuid: 74311466-a80c-4f77-b47f-6949724dd099
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5b6c64dc-929e-4f7a-a1d4-c0e4a971c609'
+  module:
+    - block_content
+  theme:
+    - drupalpro
+id: drupalpro_kontakt
+theme: drupalpro
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:5b6c64dc-929e-4f7a-a1d4-c0e4a971c609'
+settings:
+  id: 'block_content:5b6c64dc-929e-4f7a-a1d4-c0e4a971c609'
+  label: Kontakt
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,48 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        filename:
+          label: Navn
+        filemime:
+          label: 'MIME type'
+        status:
+          label: Status
+      filters:
+        filemime:
+          expose:
+            label: 'MIME type'
+        status:
+          expose:
+            label: Status
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        entity_label:
+          label: Entity
+        type:
+          label: Entity-type
+      arguments:
+        fid:
+          exception:
+            title: Alle

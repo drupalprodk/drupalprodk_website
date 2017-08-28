@@ -1,0 +1,33 @@
+uuid: e50e83d5-fc29-4411-a8a5-e1698d4d2f95
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: members
+label: Members
+type: 'canonical_entities:node'
+pattern: '/medlem/[node:title]'
+selection_criteria:
+  8dd67281-e72e-40cc-88af-41df000d04c9:
+    id: node_type
+    bundles:
+      member: member
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8dd67281-e72e-40cc-88af-41df000d04c9
+  0b13bfe6-8fe7-48de-ad12-74ec9cbb42ec:
+    id: language
+    langcodes:
+      da: da
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 0b13bfe6-8fe7-48de-ad12-74ec9cbb42ec
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,20 @@
+uuid: fc04dbd1-22a4-47fb-a796-99759b772f68
+langcode: da
+status: true
+dependencies:
+  theme:
+    - drupalpro
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalpro_page_title
+theme: drupalpro
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidetitel
+  provider: core
+  label_display: '0'
+visibility: {  }

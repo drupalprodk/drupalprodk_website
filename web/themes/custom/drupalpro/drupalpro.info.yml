@@ -1,0 +1,18 @@
+name: Drupalpro.dk
+type: theme
+description: 'Custom theme for Drupalpro.dk.'
+package: Custom
+core: 8.x
+base theme: classy
+
+regions:
+  header: Items for the header region
+  primary_menu: Items for the primary menu region
+  secondary_menu: Items for the secondary menu region
+  highlighted: Items for the highlighted content region
+  help: Dynamic help text - mostly for admin pages
+  content: The main content of the current page
+  sidebar_first: Items for the first sidebar
+  sidebar_second: Items for the second sidebar
+  footer: Items for the footer region
+  breadcrumb: Items for the breadcrumb region

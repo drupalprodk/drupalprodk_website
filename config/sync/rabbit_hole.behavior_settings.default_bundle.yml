@@ -1,0 +1,11 @@
+uuid: 5118a0df-7689-46be-be9b-909feff37d9a
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9tPXnSvxaFBxdiQkvZZpU3OIFpU-AyFgeQSIPj2frXg
+id: default_bundle
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 0
