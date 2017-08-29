@@ -30,7 +30,8 @@
         "drupal/webform": "5.x-dev",
         "drupal/redirect": "^1.0@beta",
         "drupal/admin_toolbar": "^1.0",
-        "drupal/rabbit_hole": "1.x-dev"
+        "drupal/rabbit_hole": "1.x-dev",
+        "drupal/block_field": "1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
