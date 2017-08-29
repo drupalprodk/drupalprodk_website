@@ -1,0 +1,33 @@
+uuid: 2d92772a-4ef8-4dbc-9ad7-e22eb3c898cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.frontpage.field_left_column_block
+    - field.field.node.frontpage.field_left_column_text
+    - field.field.node.frontpage.field_right_column_block
+    - field.field.node.frontpage.field_right_column_text
+    - node.type.frontpage
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.frontpage.teaser
+targetEntityType: node
+bundle: frontpage
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_left_column_block: true
+  field_left_column_text: true
+  field_right_column_block: true
+  field_right_column_text: true
+  langcode: true

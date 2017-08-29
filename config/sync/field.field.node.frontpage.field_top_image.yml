@@ -1,0 +1,38 @@
+uuid: 5bc0b5a9-54ad-42e1-a120-81bb2953dafe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_image
+    - node.type.frontpage
+  module:
+    - image
+id: node.frontpage.field_top_image
+field_name: field_top_image
+entity_type: node
+bundle: frontpage
+label: 'Top image'
+description: 'Image used as background in the top of the page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 244d1908-1202-4679-8ee2-32e2dcb12292
+    alt: ''
+    title: ''
+    width: 1750
+    height: 440
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

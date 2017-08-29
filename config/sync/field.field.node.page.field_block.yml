@@ -1,0 +1,23 @@
+uuid: e49753e5-90d7-4384-891d-d7945393a59e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block
+    - node.type.page
+  module:
+    - block_field
+id: node.page.field_block
+field_name: field_block
+entity_type: node
+bundle: page
+label: Block
+description: 'Attach one or more blocks to this node.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'views_block:members-block_1': 'views_block:members-block_1'
+field_type: block_field

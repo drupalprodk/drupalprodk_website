@@ -1,0 +1,23 @@
+uuid: f156a0a2-3467-43fc-8d69-d1ee24cf9518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_left_column_block
+    - node.type.frontpage
+  module:
+    - block_field
+id: node.frontpage.field_left_column_block
+field_name: field_left_column_block
+entity_type: node
+bundle: frontpage
+label: 'Left column block'
+description: 'Block displayed in the left column below the text content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    twitter_block: twitter_block
+field_type: block_field

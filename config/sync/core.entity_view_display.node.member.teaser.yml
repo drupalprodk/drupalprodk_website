@@ -5,10 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.member.body
+    - field.field.node.member.field_logo
     - node.type.member
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.member.teaser
 targetEntityType: node
 bundle: member
@@ -26,4 +33,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_logo: true
   langcode: true

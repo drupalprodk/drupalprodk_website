@@ -2,6 +2,8 @@ uuid: fc04dbd1-22a4-47fb-a796-99759b772f68
 langcode: da
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - drupalpro
 _core:
@@ -17,4 +19,9 @@ settings:
   label: Sidetitel
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

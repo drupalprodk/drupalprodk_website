@@ -1,0 +1,84 @@
+uuid: eb4dc3a2-1899-43a3-90d3-cefed7b65407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.frontpage.field_left_column_block
+    - field.field.node.frontpage.field_left_column_headline
+    - field.field.node.frontpage.field_left_column_text
+    - field.field.node.frontpage.field_metatags
+    - field.field.node.frontpage.field_right_column_block
+    - field.field.node.frontpage.field_right_column_headline
+    - field.field.node.frontpage.field_right_column_text
+    - field.field.node.frontpage.field_top_image
+    - field.field.node.frontpage.field_top_image_text
+    - node.type.frontpage
+  module:
+    - block_field
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+id: node.frontpage.default
+targetEntityType: node
+bundle: frontpage
+mode: default
+content:
+  field_left_column_block:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: first
+  field_left_column_headline:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: top
+  field_left_column_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: first
+  field_right_column_block:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: second
+  field_right_column_headline:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_right_column_text:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+  links:
+    weight: 0
+    region: top
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_metatags: true
+  field_top_image: true
+  field_top_image_text: true
+  langcode: true

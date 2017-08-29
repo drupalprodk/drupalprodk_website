@@ -1,0 +1,22 @@
+uuid: 52297f83-0218-4275-aa22-526f5a70e205
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.frontpage
+id: node.frontpage.status
+field_name: status
+entity_type: node
+bundle: frontpage
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

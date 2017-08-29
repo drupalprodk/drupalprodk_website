@@ -3,7 +3,7 @@ langcode: da
 status: true
 dependencies: {  }
 name: top_image
-label: 'Top image'
+label: 'Top image (1750x440)'
 effects:
   cd04affe-b05c-4cc7-8ee0-e64e991ed8d5:
     uuid: cd04affe-b05c-4cc7-8ee0-e64e991ed8d5

@@ -1,0 +1,5 @@
+name: Drupalpro Blocks
+type: module
+description: Custom blocks used on the Drupalpro.dk website.
+core: 8.x
+package: Drupalpro.dk

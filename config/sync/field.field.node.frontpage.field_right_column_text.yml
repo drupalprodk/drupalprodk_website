@@ -1,0 +1,21 @@
+uuid: d6dc72a1-c231-493e-9b5c-945dd552ed93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_right_column_text
+    - node.type.frontpage
+  module:
+    - text
+id: node.frontpage.field_right_column_text
+field_name: field_right_column_text
+entity_type: node
+bundle: frontpage
+label: 'Right column text'
+description: 'Text content displayed in the right column.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

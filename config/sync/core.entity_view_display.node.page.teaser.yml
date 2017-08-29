@@ -5,10 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_block
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_top_image
+    - field.field.node.page.field_top_image_text
+    - field.field.node.page.field_webform
     - node.type.page
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
 id: node.page.teaser
@@ -28,4 +39,9 @@ content:
     weight: 101
     region: content
 hidden:
+  field_block: true
+  field_metatags: true
+  field_top_image: true
+  field_top_image_text: true
+  field_webform: true
   langcode: true

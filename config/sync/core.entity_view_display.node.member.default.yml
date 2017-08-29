@@ -7,9 +7,15 @@ dependencies:
     - field.field.node.member.field_logo
     - node.type.member
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.member.default
 targetEntityType: node
 bundle: member
@@ -18,13 +24,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_logo:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -32,7 +38,9 @@ content:
     type: image
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

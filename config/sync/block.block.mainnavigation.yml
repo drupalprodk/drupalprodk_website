@@ -1,0 +1,27 @@
+uuid: 2d990e6f-2187-4050-a1f7-ec0e77cd8873
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - drupalpro
+id: mainnavigation
+theme: drupalpro
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0544cf21-f8a9-4e40-8774-8d971dbb5b6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalpro_blocks
+  theme:
+    - drupalpro
+id: drupalpro.dktopimageblock
+theme: drupalpro
+region: header
+weight: 0
+provider: null
+plugin: drupalpro_top_image
+settings:
+  id: drupalpro_top_image
+  label: 'Drupalpro.dk Top Image Block'
+  provider: drupalpro_blocks
+  label_display: '0'
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility: {  }

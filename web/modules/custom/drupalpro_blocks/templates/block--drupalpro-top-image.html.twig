@@ -1,0 +1,31 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Default theme implementation for a Drupalpro top image block.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - top_image: Top image defined on the node in context with fallback to node type settings.
+ * - top_text: Top text defined on the node in context with fallback to node type settings.
+ *
+ * @ingroup themeable
+ */
+#}
+{% block content %}
+  {% if site_logo %}
+    <div class="site-logo">
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+      </a>
+    </div>
+  {% endif %}
+  {% if top_text %}
+    <div class="top-text">
+      {{ top_text }}
+    </div>
+  {% endif %}
+  {% if top_image %}
+    <div class="top-image" style="background-image: url({{ top_image }});"></div>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,144 @@
+uuid: 8c9fd14b-6a4a-4734-822b-1e8271ca8bae
+langcode: da
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: bliv_medlem
+title: 'Bliv medlem'
+description: ''
+category: ''
+elements: "medarbejdere:\n  '#type': radios\n  '#title': Medarbejdere\n  '#options':\n    op_til_8: 'Op til 8 medarbejdere (3.750,- kr)'\n    mere_end_8: 'Flere end 8 medarbejdere (7.500,- kr)'\n  '#required': true\nfirmanavn:\n  '#type': textfield\n  '#title': Firmanavn\n  '#title_display': before\n  '#description_display': after\n  '#maxlength': '100'\n  '#required': true\nadresse:\n  '#type': textfield\n  '#title': Adresse\n  '#title_display': before\n  '#description_display': after\n  '#maxlength': '100'\n  '#required': true\nkontaktperson:\n  '#type': textfield\n  '#title': Kontaktperson\n  '#maxlength': '100'\n  '#required': true\ntelefon_nr_:\n  '#type': textfield\n  '#title': 'Telefon nr.'\n  '#maxlength': '50'\n  '#required': true\ne_mail:\n  '#type': email\n  '#title': E-mail\n  '#required': true\nkundereferencer:\n  '#type': textarea\n  '#title': 'Oplys 3 Drupal kundereferencer'\n  '#required': true\nbesked:\n  '#type': textarea\n  '#title': Besked\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send tilmelding'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: url
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: /tak-din-ansøgning
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  e_mail:
+    id: email
+    label: E-mail
+    handler_id: e_mail
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: bestyrelsen@drupalpro.dk
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
