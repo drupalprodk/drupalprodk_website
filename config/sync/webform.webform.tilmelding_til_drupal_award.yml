@@ -1,0 +1,180 @@
+uuid: a6c08a0f-39aa-4ac5-acb7-adbb8d339972
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: tilmelding_til_drupal_award
+title: 'Tilmelding til Drupal Award'
+description: ''
+category: ''
+elements: "faktura_adresse:\n  '#type': fieldset\n  '#title': 'Faktura adresse'\n  virksomhed:\n    '#type': textfield\n    '#title': Virksomhed\n    '#title_display': before\n    '#required': true\n  fakturerings_email_adresse:\n    '#type': email\n    '#title': 'Fakturerings email-adresse'\n    '#title_display': before\n    '#required': true\n  dit_navn:\n    '#type': textfield\n    '#title': 'Dit navn'\n    '#title_display': before\n    '#required': true\n  din_email_adresse:\n    '#type': email\n    '#title': 'Din email-adresse'\n    '#title_display': before\n    '#required': true\n  dit_tlf_nr:\n    '#type': tel\n    '#title': 'Dit tlf-nr'\n    '#title_display': before\n    '#required': true\n    '#international': true\n    '#international_initial_country': DK\ntilmeld_flere:\n  '#type': fieldset\n  '#title': 'Tilmeld flere'\n  intro_tilmeld_flere:\n    '#type': webform_markup\n    '#markup': \"<br />\\nV&aelig;lg det antal deltagere, som du &oslash;nsker at tilmelde til Drupal Award 2017 - udover dig selv.\"\n  antal_deltagere:\n    '#type': select\n    '#title': 'Antal deltagere'\n    '#title_display': before\n    '#options':\n      1: '1'\n      2: '2'\n      3: '3'\n      4: '4'\n      5: '5'\n      6: '6'\n      7: '7'\n      8: '8'\n      9: '9'\n      10: '10'\n      11: '11'\n      12: '12'\n      13: '13'\n      14: '14'\n      15: '15'\n    '#empty_option': '- Ingen -'\n    '#empty_value': '0'\n    '#required': true\n  navne_pa_deltagere:\n    '#type': textarea\n    '#title': 'Navne på deltagere'\n    '#description': 'Et navn pr. linje. OBS det skal v&aelig;re deltagernes fulde navne.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Tilmeld\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  kvittering:
+    id: email
+    label: Kvittering
+    handler_id: kvittering
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:din_email_adresse:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: 'Bekræftelse af tilmelding til Drupal Awards 2017'
+      body: "Hej [webform_submission:values:dit_navn:value]<br />\n<br />\nTak for din tilmelding til Drupal Awards 2017.&nbsp;<br />\n<br />\nVi har registreret din tilmelding, og gl&aelig;der os til at se dig/jer til Danish Drupal Awards 2017 torsdag den 6. april 2017 hos Dansk Industri,&nbsp;<br />\nH.C. Andersens Boulevard 18, 1787 K&oslash;benhavn V, kl. 18.00.<br />\n<br />\nVenlig hilsen<br />\nDrupal Leverand&oslash;rforeningen"
+      excluded_elements:
+        virksomhed: virksomhed
+        fakturerings_email_adresse: fakturerings_email_adresse
+        dit_navn: dit_navn
+        din_email_adresse: din_email_adresse
+        dit_tlf_nr: dit_tlf_nr
+        antal_deltagere: antal_deltagere
+        navne_pa_deltagere: navne_pa_deltagere
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+  tilmelding_til_bestyrelsen:
+    id: email
+    label: 'Tilmelding til bestyrelsen'
+    handler_id: tilmelding_til_bestyrelsen
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: best@drupalpro.dk
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''

@@ -1,0 +1,188 @@
+uuid: cc2fe6d6-f8f0-41c0-ad7f-ca3c5baaee7f
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: ansogning_til_drupal_award
+title: 'Ansøgning til Drupal Award'
+description: ''
+category: ''
+elements: "arbejde_virksomhed_og_bureau:\n  '#type': fieldset\n  '#title': 'Arbejde, virksomhed og bureau'\n  titel_pa_arbejde:\n    '#type': textfield\n    '#title': 'Titel på arbejde (projekt eller kampagne)'\n    '#title_display': before\n    '#required': true\n  virksomhed:\n    '#type': textfield\n    '#title': Virksomhed\n    '#title_display': before\n    '#required': true\n  bureau:\n    '#type': textfield\n    '#title': Bureau\n    '#title_display': before\n    '#required': true\n  url_til_losning:\n    '#type': textfield\n    '#title': 'URL til løsning'\n    '#title_display': before\n  screen_dump:\n    '#type': webform_image_file\n    '#title': 'Vedhæft et screen dump'\n    '#description': 'Vedh&aelig;ft et screen dump af et eksempel p&aring; d&eacute;t, din virksomhed g&oslash;r rigtig godt. Vedl&aelig;g test login, hvis det er n&oslash;dvendigt for juryen at vurdere jeres l&oslash;sning, eller evt. screen dumps, der viser kundeoplevelsen bag login.'\n    '#title_display': before\n    '#description_display': after\n    '#required': true\n    '#max_filesize': '2'\n    '#file_extensions': 'jpg png'\nvaelg_kategori:\n  '#type': fieldset\n  '#title': 'Vælg kategori'\n  intro_kategori:\n    '#type': webform_markup\n    '#markup': 'Du kan kun v&aelig;lge en kategori, men hvis din virksomhed &oslash;nsker at tilmelde sig i flere kategorier (max 2), s&aring; skal du lave en ny ans&oslash;gning for n&aelig;ste kategori. Du kan se kategorierne her: goo.gl/hy2UMI'\n  kategori:\n    '#type': select\n    '#title': Kategori\n    '#title_display': before\n    '#options':\n      1: 'Bedste Corporate website'\n      2: 'Bedste Offentlige website'\n      3: 'Bedste Interesseorganisation website'\n      4: 'Bedste E-Commerce website'\n      5: 'Bedste Intranet website'\n      6: 'Bedste Bidrag'\n      7: 'Bedste Design'\n      8: 'Bedste Inhouse website'\n    '#required': true\nhvorfor_skal_i_vinde_:\n  '#type': fieldset\n  '#title': 'Hvorfor skal I vinde?'\n  intro_hvorfor:\n    '#type': webform_markup\n    '#markup': 'Max 1000 anslag i hver boks'\n  hvad_var_udfordringen:\n    '#type': textarea\n    '#title': 'Hvad var udfordringen?'\n    '#title_display': before\n    '#required': true\n    '#counter_type': character\n    '#counter_maximum': '1000'\n  hvad_har_i_faet_lavet_og_hvordan_loste_drupal_udfordringen:\n    '#type': textarea\n    '#title': 'Hvad har I fået lavet, og hvordan løste Drupal udfordringen?'\n    '#title_display': before\n    '#required': true\n    '#counter_type': character\n    '#counter_maximum': '1000'\n  hvad_var_resultatet:\n    '#type': textarea\n    '#title': 'Hvad var resultatet?'\n    '#description': 'Skriv gerne faktuelle tal og oplysninger s&aring;som brugertilfredshed, oms&aelig;tningstal, bes&oslash;gstal /udviklingen i bes&oslash;gstal og indtjening og andre vigtige KPI&rsquo;er. Tallene m&aring; ogs&aring; gerne v&aelig;re i procenter, hvis det er f&oslash;lsomme oplysninger.'\n    '#title_display': before\n    '#description_display': after\n    '#required': true\n    '#counter_type': character\n    '#counter_maximum': '1000'\n  upload_video:\n    '#type': webform_video_file\n    '#title': 'Upload video'\n    '#title_display': before\n    '#max_filesize': '232'\nindstiller_og_faktura_adresse:\n  '#type': fieldset\n  '#title': 'Indstiller og faktura adresse'\n  indstiller:\n    '#type': textfield\n    '#title': Indstiller\n    '#title_display': before\n    '#required': true\n  fakturerings_email_adresse:\n    '#type': email\n    '#title': 'Fakturerings email-adresse'\n    '#title_display': before\n    '#required': true\n  dit_navn:\n    '#type': textfield\n    '#title': 'Dit navn'\n    '#title_display': before\n    '#required': true\n  din_email_adresse:\n    '#type': email\n    '#title': 'Din email-adresse'\n    '#title_display': before\n    '#required': true\n  dit_tlf_nr_:\n    '#type': textfield\n    '#title': 'Dit tlf-nr.'\n    '#title_display': before\n    '#maxlength': '20'\n    '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: message
+  confirmation_title: ''
+  confirmation_message: 'Tak for din ans&oslash;gning. Du har ogs&aring; modtaget en email, som bekr&aelig;fter din ans&oslash;gning.'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  kvittering:
+    id: email
+    label: Kvittering
+    handler_id: kvittering
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:din_email_adresse:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: 'Bekræftelse af ansøgning til Danish Drupal Awards'
+      body: "Hej [webform_submission:values:dit_navn:raw]<br />\n<br />\nTak for din tilmelding til Danish Drupal Award 2017.&nbsp;<br />\n<br />\nJuryen vil gennemg&aring; din ans&oslash;gning og kontakte dig, hvis de har sp&oslash;rgsm&aring;l til din indsendelse.<br />\n<br />\nVinderen i kategorien &ldquo;[webform_submission:values:kategori:raw]&rdquo; vil blive annonceret til Danish Drupal Award 2017 torsdag den 6. april 2017 hos Dansk Industri,&nbsp;<br />\nH. C. Andersens Boulevard 18, 1787 K&oslash;benhavn V, kl. 18.00.<br />\n<br />\nDu kan ogs&aring; tilmelde dine kollegaer til Danish Drupal Awards pris uddelingen p&aring; f&oslash;lgende link: http://www.drupalpro.dk/tilmelding-til-danish-drupal-award<br />\n<br />\nVi gl&aelig;der os til at se dig/jer!<br />\n<br />\nVenlig hilsen<br />\nDrupal Leverand&oslash;rforening"
+      excluded_elements:
+        titel_pa_arbejde: titel_pa_arbejde
+        virksomhed: virksomhed
+        bureau: bureau
+        url_til_losning: url_til_losning
+        screen_dump: screen_dump
+        kategori: kategori
+        hvad_var_udfordringen: hvad_var_udfordringen
+        hvad_har_i_faet_lavet_og_hvordan_loste_drupal_udfordringen: hvad_har_i_faet_lavet_og_hvordan_loste_drupal_udfordringen
+        hvad_var_resultatet: hvad_var_resultatet
+        upload_video: upload_video
+        indstiller: indstiller
+        fakturerings_email_adresse: fakturerings_email_adresse
+        dit_navn: dit_navn
+        din_email_adresse: din_email_adresse
+        dit_tlf_nr_: dit_tlf_nr_
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: best@drupalpro.dk
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: 'Drupal Award 2014'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
