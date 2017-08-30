@@ -3,7 +3,6 @@
 namespace Drupal\drupalpro_blocks\Plugin\Block;
 
 use Drupal\Core\Render\Markup;
-use Drupal\Core\Url;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
@@ -25,10 +24,10 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class DrupalproTopImage extends BlockBase implements ContainerFactoryPluginInterface {
 
   /**
- * The entity type manager.
- *
- * @var \Drupal\Core\Entity\EntityTypeManagerInterface
- */
+  * The entity type manager.
+  *
+  * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+  */
   protected $entityTypeManager;
 
   /**

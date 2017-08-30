@@ -33,6 +33,13 @@ function drupalpro_blocks_theme($existing, $type, $theme, $path) {
       'render element' => 'elements',
       'base hook' => 'block',
     ],
+    'block__drupalpro_facts' => [
+      'base hook' => 'block',
+      'fact_modules' => 0,
+      'fact_developers_worldwide' => 0,
+      'fact_jobs_denmark' => 0,
+      'fact_drupalpro_members' => 0
+    ],
   ];
 }
 
@@ -55,6 +62,13 @@ function drupalpro_blocks_preprocess_block(&$variables) {
         $uri = $variables['content']['top_image']['#uri'];
         $variables['top_image'] =  ImageStyle::load('top_image')->buildUrl($uri);
       }
+      break;
+
+    case 'drupalpro_facts':
+      $variables['fact_modules'] = $variables['content']['fact_modules'];
+      $variables['fact_developers_worldwide'] = $variables['content']['fact_developers_worldwide'];
+      $variables['fact_jobs_denmark'] = $variables['content']['fact_jobs_denmark'];
+      $variables['fact_drupalpro_members'] = $variables['content']['fact_drupalpro_members'];
       break;
   }
 }

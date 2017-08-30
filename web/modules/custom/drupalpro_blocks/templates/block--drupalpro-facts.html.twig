@@ -1,0 +1,36 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Default theme implementation for a Drupalpro facts block.
+ *
+ * Available variables:
+ * - fact_modules: The number of available modules on drupal.org.
+ * - fact_developers_worldwide: The number of developers registered on Drupal.org.
+ * - fact_jobs_denmark: The number of jobs related to Drupal in Denmark.
+ * - fact_drupalpro_members: The number of members of Drupalpro.
+ *
+ * @ingroup themeable
+ */
+#}
+{% block content %}
+  <div class="fact fact-jobs-denmark">
+    <div class="content">{{ fact_jobs_denmark }}</div>
+    <div class="label">{{ 'workplaces'|t }}<br>{{ 'in DK'|t }}</div>
+  </div>
+
+  <div class="fact fact-modules">
+    <div class="content">{{ fact_modules }}</div>
+    <div class="label">{{ 'modules'|t }}</div>
+  </div>
+
+  <div class="fact fact-developers-worldwide">
+    <div class="content">{{ fact_developers_worldwide }}</div>
+    <div class="label">{{ 'developers worldwide'|t }}</div>
+  </div>
+
+  <div class="fact fact-drupalpro-members">
+    <div class="content">{{ fact_drupalpro_members }}</div>
+    <div class="label">{{ 'members'|t }}</div>
+  </div>
+{% endblock %}
