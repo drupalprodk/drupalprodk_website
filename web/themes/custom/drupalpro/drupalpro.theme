@@ -4,3 +4,19 @@
  * @file
  * Functions to support theming in the Drupalpro.dk theme.
  */
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function drupalpro_theme_suggestions_field_alter(&$suggestions, $variables) {
+  $field_name = $variables['element']['#field_name'];
+
+  // Template suggestion for specific field names.
+  $field_names = [
+    'field_left_column_headline',
+    'field_right_column_headline',
+  ];
+  if (in_array($field_name, $field_names)) {
+    $suggestions[] = 'field__field_headline';
+  }
+}

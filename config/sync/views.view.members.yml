@@ -1,5 +1,5 @@
 uuid: ca066cae-2cb9-48be-a57d-159e4ae3301d
-langcode: da
+langcode: en
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
 id: members
 label: Members
 module: views
-description: ''
+description: 'Members listing and other member related views.'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -72,7 +72,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -137,7 +137,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -178,9 +178,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_url
+          type: image
           settings:
             image_style: ''
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -202,8 +203,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class=\"front\">\n  <div class=\"inside\">\n    {{ field_logo }}\n  </div>\n</div>\n<div class=\"back\">\n  <div class=\"inside\">\n    <h2>{{ title }}</h2>\n    <div class=\"description\">\n      {{ body }}\n    </div>\n  </div>\n</div>\n"
             make_link: false
             path: ''
             absolute: false
