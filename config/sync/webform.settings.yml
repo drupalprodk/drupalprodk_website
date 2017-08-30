@@ -111,7 +111,7 @@ ui:
 libraries:
   excluded_libraries:
     - jquery.chosen
-  cdn: false
+  cdn: true
 langcode: da
 third_party_settings: {  }
 _core:
