@@ -40,7 +40,6 @@ module:
   redirect: 0
   redis: 0
   rh_node: 0
-  search: 0
   shortcut: 0
   system: 0
   taxonomy: 0
