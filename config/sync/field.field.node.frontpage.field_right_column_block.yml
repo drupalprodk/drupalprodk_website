@@ -19,5 +19,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   plugin_ids:
+    drupalpro_facts: drupalpro_facts
     twitter_block: twitter_block
 field_type: block_field
